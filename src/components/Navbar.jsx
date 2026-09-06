@@ -16,6 +16,8 @@ function Navbar() {
         setShowNavbar(true)
       }
 
+      setMenuOpen(false)
+
       lastScrollY = currentScrollY
     }
 
@@ -32,7 +34,7 @@ function Navbar() {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <div className="mx-auto flex w-[88%] max-w-[1600px] items-center justify-between py-4 md:py-5">
         <a
           href="#"
           className="text-xl font-bold tracking-tight"
@@ -84,19 +86,41 @@ function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-2xl md:hidden"
+          className="relative flex h-10 w-10 items-center justify-center rounded-md md:hidden"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
-          {menuOpen ? "×" : "☰"}
+          <span
+            className={`absolute h-[2px] w-6 bg-black transition-all duration-300 ${
+              menuOpen ? "rotate-45" : "-translate-y-2"
+            }`}
+          />
+
+          <span
+            className={`absolute h-[2px] w-6 bg-black transition-all duration-300 ${
+              menuOpen ? "opacity-0" : "opacity-100"
+            }`}
+          />
+
+          <span
+            className={`absolute h-[2px] w-6 bg-black transition-all duration-300 ${
+              menuOpen ? "-rotate-45" : "translate-y-2"
+            }`}
+          />
         </button>
       </div>
 
       {/* Mobile navigation */}
       {menuOpen && (
-        <div className="border-t border-gray-200 px-6 py-6 md:hidden">
+        <div 
+          id="mobile-menu"
+          className="border-t border-gray-200 px-6 py-6 md:hidden"
+        >
           <div className="flex flex-col gap-5 text-sm">
             <a
               href="#projects"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               onClick={() => setMenuOpen(false)}
             >
               Work
@@ -104,6 +128,7 @@ function Navbar() {
 
             <a
               href="#about"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               onClick={() => setMenuOpen(false)}
             >
               About
@@ -111,6 +136,7 @@ function Navbar() {
 
             <a
               href="#skills"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               onClick={() => setMenuOpen(false)}
             >
               Skills
@@ -118,6 +144,7 @@ function Navbar() {
 
             <a
               href="#contact"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               onClick={() => setMenuOpen(false)}
             >
               Contact
@@ -125,6 +152,7 @@ function Navbar() {
 
             <a
               href="https://github.com/ApurvKr"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               target="_blank"
               rel="noreferrer"
             >
