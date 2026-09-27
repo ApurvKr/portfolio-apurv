@@ -58,7 +58,7 @@ function Hero() {
       {/* Main Hero Content */}
       <div className="w-full">
         <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
-          Frontend Developer
+          Web Developer
         </p>
 
         <h1 className="max-w-6xl text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-[clamp(4.5rem,7vw,7.5rem)]">
@@ -86,9 +86,7 @@ function Hero() {
           }`}
         >
           <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600 sm:mt-7 sm:text-lg sm:leading-8">
-            I build responsive and interactive web applications using
-            React and JavaScript, with a focus on clean interfaces and
-            good user experiences.
+            I build responsive websites and web applications using React and JavaScript, with a focus on clean interfaces, practical functionality, and good user experiences.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4 sm:mt-7">
@@ -96,7 +94,7 @@ function Hero() {
               href="#projects"
               className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
             >
-              View Projects
+              View My Work
             </a>
 
             <a
@@ -105,9 +103,12 @@ function Hero() {
               rel="noreferrer"
               className="rounded-full border border-gray-300 px-6 py-3 text-sm font-medium transition hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
             >
-              GitHub ↗
+              Let's Work Together ↗
             </a>
           </div>
+          <p className="mt-5 text-xs uppercase tracking-[0.15em] text-gray-400">
+            Open to internships · freelance projects · web development opportunities
+          </p>
         </div>
       </div>
 

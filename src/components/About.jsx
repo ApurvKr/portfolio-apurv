@@ -19,10 +19,11 @@ function About() {
 
               <div className="mt-8 space-y-6 text-base leading-8 text-gray-600 sm:text-lg">
                 <p>
-                  I'm a frontend developer who enjoys turning ideas into
-                  responsive, interactive web experiences. But beyond
-                  building interfaces, I'm curious about what makes them
-                  work.
+                  I'm a web developer who enjoys turning ideas into 
+                  responsive, interactive websites and web applications. 
+                  I like building practical interfaces, solving problems 
+                  through code, and understanding the fundamentals behind 
+                  the products I build.
                 </p>
 
                 <p>

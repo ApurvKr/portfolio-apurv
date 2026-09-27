@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Movie Review Site",
     description:
-      "A responsive movie discovery and review website built with React, allowing users to search for movies and explore their details.",
+      "A responsive movie discovery and review website built with React, integrating a movie API to search for films, explore movie details, and interact with a dynamic interface.",
     image: movieReviewImage,
     technologies: ["React", "JavaScript", "API", "CSS"],
     liveUrl: "https://reelroom-movie-review-blue.vercel.app/",
@@ -14,9 +14,9 @@ const projects = [
   {
     title: "Expense Tracker",
     description:
-      "A responsive expense tracking application for managing and organizing personal expenses.",
+      "A responsive personal finance web application built with React for managing monthly budgets, tracking income and expenses, and organizing transactions through a dynamic interface.",
     image: expenseTrackerImage,
-    technologies: ["React", "JavaScript", "Tailwind CSS"],
+    technologies: ["React", "JavaScript", "API", "Tailwind CSS"],
     liveUrl: "https://expense-tracker-react-ebon-two.vercel.app/",
     githubUrl: "https://github.com/ApurvKr/expense-tracker-react",
   },

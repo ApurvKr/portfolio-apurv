@@ -1,7 +1,7 @@
 function Skills() {
   const skillGroups = [
     {
-      title: "Frontend",
+      title: "Web Development",
       skills: ["HTML5", "CSS3", "JavaScript", "React", "Tailwind CSS"],
     },
     {

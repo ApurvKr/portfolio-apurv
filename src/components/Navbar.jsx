@@ -80,6 +80,15 @@ function Navbar() {
           >
             GitHub ↗
           </a>
+
+          <a
+            href="https://drive.google.com/file/d/1_nN7mpD4y9dm9nqeG9sGHBvhHwPZFxhP/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-gray-500"
+          >
+            Resume ↗
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -157,6 +166,15 @@ function Navbar() {
               rel="noreferrer"
             >
               GitHub ↗
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1_nN7mpD4y9dm9nqeG9sGHBvhHwPZFxhP/view?usp=sharing"
+              className="transition-colors hover:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume ↗
             </a>
           </div>
         </div>

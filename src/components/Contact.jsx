@@ -17,8 +17,7 @@ function Contact() {
             </h2>
 
             <p className="mt-7 max-w-2xl text-base leading-8 text-gray-600 sm:text-lg">
-              I'm always open to connecting, discussing ideas, or
-              working on interesting web projects.
+              I'm open to web development opportunities, freelance projects, and collaborations. If you have an idea or a project that needs a website or web application, I'd be happy to discuss it.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
@@ -27,6 +26,15 @@ function Contact() {
                 className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-800"
               >
                 Email Me ↗
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/apurv-kumar-675304262"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-gray-300 px-6 py-3 text-sm font-medium transition hover:bg-gray-100"
+              >
+                LinkedIn ↗
               </a>
 
               <a
